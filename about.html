@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tatheer</title>
+  <link rel = "icon" type = "image/png" href = "person.jpg">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#b1").click(function(){
+    $(".t").hide();
+    $("#div1").fadeIn(1000).show();
+    $("#div2").fadeIn(3000).show();
+    $("#div3").fadeIn(5000).show();
+  });
+  $("#b2").click(function(){
+    $("#lol").fadeIn(1000).show();
+    $("#div3").fadeOut(1000);
+    $("#div2").fadeOut(3000);
+    $("#div1").fadeOut(6000);
+    
+  });
+
+});
+</script>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+
+}
+button{
+
+  color:white;
+  height: 40px;
+  width: 79px;
+  border: solid;
+  border-color: grey;
+  background: grey;
+  border-radius: 10%;
+}
+button:hover{
+  color: grey;
+  background-color: white;
+  border-color: grey;
+
+}
+#b2{
+
+  color:white;
+  height: 40px;
+  width: 79px;
+  border: solid;
+  border-color: black;
+  background: black;
+  border-radius: 10%;
+}
+#b2:hover{
+  color: black;
+  background-color: white;
+  border-color: black;
+
+}
+
+.topnav {
+  margin-top: 0px;
+  z-index: 2;
+  overflow: hidden;
+  position: fixed;
+  background-color: black;
+  padding-left: 35%;
+ 
+  height: 35px;
+  width:1000px;
+}
+
+.topnav a {
+
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 10px;
+}
+
+.topnav a:hover {
+  background-color: grey;
+  color: black;
+}
+.i1{
+   background-color: black;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  padding-left: 40%;
+  height: 80px;
+  width:1000px;
+
+}
+.i1 img{
+  
+
+  border: solid;
+  padding: 0.3%;
+  border-color: black;
+  border-radius: 30%;
+}
+ .i1 img:hover {
+  background-color: #333; 
+
+}
+.t{
+  margin-left: 200px;
+  z-index: 1;
+  color:lightgrey;
+  padding: 120px;
+  animation: wow 6s ease-in;
+  
+}
+.t img{
+  background: solid;
+  border-radius: 48.5%;
+}
+.t1{
+  
+  
+}
+.t1 h1{
+  color:grey;
+}
+@keyframes wow{
+  0%{
+    opacity: 0;
+ 
+  }
+  40%{
+    opacity: 0.5;
+    
+  }
+  60%{
+    opacity: 0.9;
+    
+  }
+  80%{
+    opacity: 1.5;
+    
+  }
+  100%{
+   opacity: 100;
+   
+  }
+}
+#div1, #div2, #div3{
+  float:top;
+  margin-top: 5px;
+  margin-left: 200px;
+  width:900px;
+  border: solid;
+  border-color: lightgrey;
+  border-radius:5px; 
+  background: lightgrey;
+  padding-top:1%;
+  padding-left: 10%;
+  color:black;
+  display:none;
+}
+#lol{
+  
+  display: none;
+  margin-left:200px;
+
+}
+#lol img{
+
+  opacity: 20;
+  border: solid;
+  border-color: black;
+  border-radius: 10px;
+}
+
+</style>
+</head>
+<body>
+
+<nav class="topnav">
+  <a href="home.html" target="_self">Home</a>
+  <a href="about.html" target="_self">About</a>
+  <a href="reviews.html" target="_self">Reviews</a>
+  <a href="contact.html"target="_self">Contact</a>
+</nav>
+<div class="t">
+  <img src="tat.jpg" height="300" width="300">
+  <div class="t1"><h1>About</h1>
+  <p>An undergraduate student currently studying in NUST with a CGPA of 3.5. <button type="button" id="b1">More</button> </p>
+  </div>
+</div>
+
+<div id="div1"><h1>Skills</h1>
+  <p><ul><li>Java</li>
+    <li>MySql</li>
+    <li>C,C++</li>
+    <li>Html,CSS,Javascript</li></ul>
+ </p>
+  </div>
+  <div id="div2"><h1>Experience</h1>
+  <p><ul><li>Intern at Cykiq</li>
+    <li>Intern at Health Wibes</li></ul>
+    </p>
+  </div>
+  <div id="div3"><h1>Hobbies</h1>
+  <p><ul><li>Sketching</li>
+    <li>Painting</li></ul></p>
+  <button type="button" id="b2">See my life!</button>
+  </div>
+  <div id="lol">
+    <img src="life.png" height="500" width="1035" >
+  </div>
+
+
+<div class="i1">
+  <a href="https://www.facebook.com/tatheer.zahara.75"><img src="face.png" width="40" height="40"></img></a>
+  <a href="https://twitter.com/TatheerZahara"><img src="twit2.jpg" width="40" height="40"></img></a>
+  <a href="https://www.instagram.com/tatheer10/"><img src="inst.png" width="40" height="40"></img></a>
+</div>
+
+</body>
+</html>

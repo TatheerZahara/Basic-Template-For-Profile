@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tatheer</title>
+  <link rel = "icon" type = "image/png" href = "person.jpg">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  
+    $(".form1").fadeIn(1000).show();
+    $(".reviews").fadeIn(3000).show();
+    
+  });
+  
+</script>
+<style>
+#b1{
+
+  color:white;
+  height: 40px;
+  width: 79px;
+  border: solid;
+  border-color: grey;
+  background: grey;
+  border-radius: 10%;
+}
+#b1:hover{
+  color: grey;
+  background-color: white;
+  border-color: grey;
+
+}
+input,textarea{
+  background-color: lightgrey;
+  border-radius: 6%;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+
+}
+
+.topnav {
+
+  overflow: hidden;
+  position: fixed;
+  background-color: black;
+  padding-left: 35%;
+ 
+  height: 35px;
+  width:1000px;
+}
+
+.topnav a {
+
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 10px;
+}
+
+.topnav a:hover {
+  background-color: grey;
+  color: black;
+}
+.i1{
+   background-color: black;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  padding-left: 40%;
+  height: 80px;
+  width:1000px;
+
+}
+img{
+  
+
+  border: solid;
+  padding: 0.3%;
+  border-color: black;
+  border-radius: 30%;
+}
+ img:hover {
+  background-color: #333; 
+
+}
+.form1{
+  margin-top: 50px;
+  display: none;
+   color:grey;
+ padding-top: 30px;
+ padding-left: 200px;
+ float:left;
+}
+.reviews{
+  margin-top:50px; 
+   display: none;
+  height: 400px;
+  border-left: solid;
+  border-color: lightgrey; 
+   color:grey;
+ padding-top: 30px;
+ padding-left: 20px;
+ margin-left: 20px;
+ float:left;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<nav class="topnav">
+  <a href="home.html" target="_self">Home</a>
+  <a href="about.html" target="_self">About</a>
+  <a href="reviews.html" target="_self">Reviews</a>
+  <a href="contact.html"target="_self">Contact</a>
+</nav>
+
+
+<div class="i1">
+  <a href="https://www.facebook.com/tatheer.zahara.75"><img src="face.png" width="40" height="40"></img></a>
+  <a href="https://twitter.com/TatheerZahara"><img src="twit2.jpg" width="40" height="40"></img></a>
+  <a href="https://www.instagram.com/tatheer10/"><img src="inst.png" width="40" height="40"></img></a>
+</div>
+<div class="form1">
+  <h1>Comments and Reviews</h1>
+  <form id="form" action="javascript:void('');" class="add_comment">
+    <label><h2>Name</h2></label><br>
+         <input type="text" name="name1"> </input>
+        <label><h2>Your reviews</h2></label><br>
+         <textarea id="comment" name="comment"></textarea>
+         <br>
+        <input type="submit" value="Submit" id="b1">
+      </form>
+  
+</div>
+<div class="reviews">
+  <h1> By Others</h1>
+  <p style="text-align: center;padding: 5%;" ><h3>Tatheer</h3>
+    <p >Very Nice</p>
+  </p>
+  <p style="text-align: center;padding: 5%;" ><h3>Zoha</h3>
+    <p >Good</p>
+  </p>
+  <p style="text-align: center;padding: 5%;"><h3>Sarah</h3>
+    <p>Impressive</p>
+  </p>
+</div>
+
+</body>
+</html>

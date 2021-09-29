@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tatheer</title>
+  <link rel = "icon" type = "image/png" href = "person.jpg">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+
+
+}
+
+.topnav {
+z-index: 3;
+  overflow: hidden;
+  position: fixed;
+  background-color: black;
+  padding-left: 35%;
+  height: 35px;
+  width:1000px;
+}
+
+.topnav a {
+
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 10px;
+}
+
+.topnav a:hover {
+  background-color: grey;
+  color: black;
+}
+.i1{
+  opacity: 4;
+  z-index: 4;
+   background-color: black;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  padding-left: 40%;
+  height: 80px;
+  width:1000px;
+
+}
+.i1 img{
+  
+
+  border: solid;
+  padding: 0.3%;
+  border-color: black;
+  border-radius: 30%;
+}
+ .i1 img:hover {
+  background-color: #333; 
+
+}
+.c2{
+  z-index: 1;
+  padding: 5%;
+  float:right;
+  position: relative;
+  
+  
+}
+.c2 img{
+ border: solid;
+ padding: 2%;
+ border-color: black;
+ border-radius: 4%;
+ animation: anim 7s ease-in-out infinite alternate;
+
+}
+.c2 h2{
+  color: grey;
+  
+
+}
+.c2 img:hover {
+  background-color: #333; 
+
+}
+
+@keyframes anim{
+  0%{
+    opacity: 0;
+ 
+  }
+  40%{
+    opacity: 0.2;
+  }
+  60%{
+    opacity: 0.5;
+  }
+  80%{
+    opacity: 2.5;
+  }
+  100%{
+   opacity: 100;
+   transform:rotateY(180deg);
+  }
+}
+.c3{
+  z-index: 2;
+ color:grey;
+ padding-top: 25%;
+ padding-left: 10%;
+ float:left;
+}
+
+
+</style>
+</head>
+<body>
+
+<nav class="topnav">
+  <a href="home.html" target="_self">Home</a>
+  <a href="about.html" target="_self">About</a>
+  <a href="reviews.html" target="_self">Reviews</a>
+  <a href="contact.html"target="_self">Contact</a>
+</nav>
+
+<div class="c2">
+  <img src="lay.jpg" height="360" width="700">
+  <h2>Highlights</h2>
+</div>
+<div class="c3">
+  <h1> Tatheer Zahra</h1>
+  <div>
+    <q><i>Dream.Aim.Conquer</i></q>
+  </div>
+</div>
+<div class="i1">
+  <a href="https://www.facebook.com/tatheer.zahara.75"><img src="face.png" width="40" height="40"></img></a>
+  <a href="https://twitter.com/TatheerZahara"><img src="twit2.jpg" width="40" height="40"></img></a>
+  <a href="https://www.facebook.com/"><img src="inst.png" width="40" height="40"></img></a>
+</div>
+
+</body>
+</html>
